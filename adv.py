@@ -31,11 +31,12 @@ player = Player(world.starting_room)
 # keeps track of path
 
 # print('current room', player.current_room.id)
- # first room
     # Room 0
     # (3, 5)
     # Exits: [n]
 # print('current room exts', player.current_room.get_exits())
+
+# when a player can no longer go in a cardinal direction, the player either goes to an entirely different available exit or goes in the opposite direction to backtrack out of the room. 
 
 traversal_path = []
 # when an end is reached, player needs to backtrack in the opposite direction
@@ -110,4 +111,3 @@ else:
 #     else:
 #         print("I did not understand that command.")
 
-# when a player can no longer go in a cardinal direction, the player either goes to an entirely different available exit or goes in the opposite direction to backtrack out of the room. Ex, head N reach a deadend, must head S to exit out of room
